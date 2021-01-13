@@ -1,7 +1,7 @@
 <?php
 
 
-class Pages
+class Pages extends Controller
 {
 
     /**
@@ -13,9 +13,11 @@ class Pages
     }
     public function index() {
         echo 'Index method is loaded<br>';
+        $this->view('index');
     }
     public function about() {
         echo 'About method is loaded<br>';
+        $this->view('about');
 }
 
 }
