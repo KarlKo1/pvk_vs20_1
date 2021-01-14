@@ -20,7 +20,10 @@ class Pages extends Controller
         $this->view('pages/index', $data);
     }
     public function about() {
-       // echo 'About method is loaded<br>';
+        // model test
+        $this->pagesModel->addUser();
+        echo 'user data is saved<br>';
+        // echo 'About method is loaded<br>';
         $data = array('content' => 'Pages about view is loaded by MVC');
         $this->view('pages/about', $data);
     }
