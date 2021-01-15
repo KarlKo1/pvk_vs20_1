@@ -1,4 +1,4 @@
 <?php
 require_once '../app/bootstrap.php';
-// init app core
+// iinit app core
 $init = new Core();
