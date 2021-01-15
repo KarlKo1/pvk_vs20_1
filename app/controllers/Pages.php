@@ -11,6 +11,7 @@ class Pages extends Controller
     {
         $this->pagesModel = $this->model('Page');
     }
+
     public function index() {
         // echo 'Index method is loaded<br>';
         $data = array(
@@ -22,8 +23,8 @@ class Pages extends Controller
     public function about() {
         // model test
         // $this->pagesModel->addUser();
-        $user = $this->pagesModel->getOneUser();
-        print_r($user);
+        $users = $this->pagesModel->getUsers();
+        print_r($users);
         // echo 'About method is loaded<br>';
         $data = array('content' => 'Pages about view is loaded by MVC');
         $this->view('pages/about', $data);
